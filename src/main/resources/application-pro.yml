@@ -1,0 +1,23 @@
+
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/blog?useUnicode=true&characterEncoding=utf-8&serverTimezone=Asia/Chongqing&
+    username: root
+    password: guan1314
+  jpa:
+    hibernate:
+      ddl-auto: update
+      use-new-id-generator-mappings: false  #数据库主键自增长
+    show-sql: false
+
+
+logging:
+  level:
+    root: warn
+    com.guanzh: info
+  file: logs/blog-pro.log
+
+server:
+  port: 80
+
